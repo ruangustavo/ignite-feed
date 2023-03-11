@@ -1,5 +1,11 @@
 import "./App.css";
+import { Header } from "./Header";
 
 export function App() {
-  return <h1>Hello, world!</h1>;
+  return (
+    <div className="wrapper">
+      <Header />
+      <p>Here's the body content</p>
+    </div>
+  );
 }

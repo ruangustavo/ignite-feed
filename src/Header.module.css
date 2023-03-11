@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--gray-2);
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  color: var(--gray-7);
+  padding: 2rem 0;
+  margin-left: 1.6rem;
+}
