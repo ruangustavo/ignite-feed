@@ -58,6 +58,11 @@
   font-weight: bold;
 }
 
+.contentHeader button:hover {
+  color: var(--red-danger);
+  transition: color 0.2s;
+}
+
 .contentWrapper {
   display: flex;
   flex-direction: column;
@@ -72,10 +77,14 @@
   font-size: 1.4rem;
   cursor: pointer;
   font-weight: bold;
-
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+.commentActions button:hover {
+  color: var(--gray-7);
+  transition: color 0.5s;
 }
 
 .totalOfLikes::before {

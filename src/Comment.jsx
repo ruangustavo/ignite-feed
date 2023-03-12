@@ -17,7 +17,7 @@ export function Comment() {
               <time>Cerca de 2h</time>
             </div>
             <button>
-              <Trash size={24} />
+              <Trash size={24} weight={"bold"} />
             </button>
           </div>
           <div className={styles.comment}>
@@ -26,7 +26,7 @@ export function Comment() {
         </div>
         <div className={styles.commentActions}>
           <button>
-            <ThumbsUp size={20} />
+            <ThumbsUp size={20} weight={"bold"} />
             <span>Aplaudir</span>
             <span className={styles.totalOfLikes}>3</span>
           </button>
