@@ -38,4 +38,5 @@ textarea {
 
 :focus {
   outline: solid 0.2rem var(--green);
+  height: fit-content;
 }
