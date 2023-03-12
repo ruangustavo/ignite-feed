@@ -1,6 +1,7 @@
 import { Header } from "./Header";
 import styles from "./App.module.css";
 import { Sidebar } from "./Sidebar";
+import { Post } from "./Post";
 
 export function App() {
   return (
@@ -9,7 +10,7 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <p>Hello, it's working</p>
+          <Post />
         </main>
       </div>
     </div>

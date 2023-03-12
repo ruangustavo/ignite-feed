@@ -28,3 +28,14 @@ body {
   background-color: var(--gray-1);
   color: var(--gray-6);
 }
+
+button,
+input,
+textarea {
+  font: 1.6rem "Roboto", sans-serif;
+  color: var(--gray-6);
+}
+
+:focus {
+  outline: solid 0.2rem var(--green);
+}
