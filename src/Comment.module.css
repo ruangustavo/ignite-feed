@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.wrapper + .wrapper {
+  margin-top: 2.4rem;
+}
+
+.content {
+  background-color: var(--gray-3);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.avatar img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author strong {
+  color: var(--gray-7);
+  font-size: 1.4rem;
+}
+
+.author strong > span {
+  color: var(--gray-5);
+  font-size: 1.4rem;
+}
+
+.author time {
+  font-size: 1.2rem;
+}
+.comment p {
+  font-size: 1.4rem;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentHeader button {
+  background-color: transparent;
+  border: none;
+  color: var(--gray-5);
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.commentActions button {
+  background-color: transparent;
+  border: none;
+  color: var(--gray-5);
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.totalOfLikes::before {
+  content: "\2022";
+  margin-right: 0.8rem;
+}
