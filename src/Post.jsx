@@ -11,7 +11,7 @@ export function Post() {
             <span>Full-stack developer</span>
           </div>
         </div>
-        <time>Públicado há 1 minuto</time>
+        <time>Publicado há 1 minuto</time>
       </header>
 
       <div className={styles.content}>
@@ -30,11 +30,13 @@ export function Post() {
         </p>
       </div>
 
-      <footer className={styles.footer}>
+      <form className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
         <textarea placeholder="Escreva um comentário..." />
-        <button>Publicar</button>
-      </footer>
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </div>
   );
 }
