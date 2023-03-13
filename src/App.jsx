@@ -10,8 +10,11 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post />
-          <Post />
+          <Post
+            author="Ruan Gustavo"
+            content="Fala galeraa 👋!"
+            role="Full-stack developer"
+          />
         </main>
       </div>
     </div>
