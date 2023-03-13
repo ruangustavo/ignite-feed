@@ -19,6 +19,11 @@
   --neutral-800: #262626;
 }
 
+*::selection {
+  background-color: var(--blue-400);
+  color: var(--white);
+}
+
 body {
   font: 1.6rem "Roboto", sans-serif;
   background-color: var(--neutral-200);
