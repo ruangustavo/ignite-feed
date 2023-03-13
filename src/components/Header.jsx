@@ -1,4 +1,4 @@
-import logo from "./assets/logo-ignite.svg";
+import logo from "../assets/logo-ignite.svg";
 import styles from "./Header.module.css";
 
 export function Header() {
