@@ -83,6 +83,7 @@
   border-radius: 8px;
   height: 9.6rem;
   padding: 1.6rem;
+  word-break: break-word;
 }
 
 .commentForm textarea:focus {
