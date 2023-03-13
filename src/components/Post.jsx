@@ -13,10 +13,17 @@ export function Post({ author, content, publishedAt }) {
     locale: ptBR,
   });
 
-  const formattedDateRelativeToNow = formatDistanceToNow(publishedAt, {
-    locale: ptBR,
-    addSuffix: true,
-  });
+  function getFormattedDateRelativeToNow(date) {
+    const formattedDate = formatDistanceToNow(date, {
+      locale: ptBR,
+      addSuffix: true,
+    });
+
+    const capitalizedFormattedDate =
+      formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+
+    return capitalizedFormattedDate;
+  }
 
   function handleCreateNewComment(event) {
     event.preventDefault();
@@ -34,7 +41,11 @@ export function Post({ author, content, publishedAt }) {
   }
 
   function deleteComment(content) {
-    setComments(comments.filter((comment) => comment !== content));
+    const commentsWithoutDeletedComment = comments.filter(
+      (comment) => comment !== content
+    );
+
+    return setComments(commentsWithoutDeletedComment);
   }
 
   const isNewCommentInvalid = newComment.length === 0;
@@ -43,7 +54,7 @@ export function Post({ author, content, publishedAt }) {
     <div className={styles.wrapper}>
       <header className={styles.header}>
         <div className={styles.user}>
-          <Avatar src={"https://github.com/ruangustavo.png"} hasBorder />
+          <Avatar src={author.avatarUrl} hasBorder />
           <div className={styles.info}>
             <strong>{author.name}</strong>
             <span>{author.role}</span>
@@ -51,7 +62,7 @@ export function Post({ author, content, publishedAt }) {
         </div>
 
         <time title={formattedDate} dateTime={publishedAt.toISOString()}>
-          {formattedDateRelativeToNow}
+          {getFormattedDateRelativeToNow(publishedAt)}
         </time>
       </header>
 
@@ -89,6 +100,8 @@ export function Post({ author, content, publishedAt }) {
         <Comment
           key={comment}
           content={comment}
+          author={author}
+          publishedAt={getFormattedDateRelativeToNow(new Date())}
           onCommentDelete={deleteComment}
         />
       ))}

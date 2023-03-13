@@ -3,7 +3,7 @@ import { Avatar } from "./Avatar";
 import { ThumbsUp, Trash } from "@phosphor-icons/react";
 import { useState } from "react";
 
-export function Comment({ content, onCommentDelete }) {
+export function Comment({ content, author, publishedAt, onCommentDelete }) {
   const [likeCount, setLikeCount] = useState(0);
 
   function handleDeleteComment() {
@@ -16,13 +16,13 @@ export function Comment({ content, onCommentDelete }) {
 
   return (
     <div className={styles.wrapper}>
-      <Avatar src={"https://github.com/ruangustavo.png"} />
+      <Avatar src={author.avatarUrl} />
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <div className={styles.contentHeader}>
             <div className={styles.author}>
-              <strong>Ruan Gustavo</strong>
-              <time>Cerca de 2h</time>
+              <strong>{author.name}</strong>
+              <time>{publishedAt}</time>
             </div>
             <button onClick={handleDeleteComment}>
               <Trash size={24} weight={"bold"} />

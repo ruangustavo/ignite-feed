@@ -28,6 +28,7 @@ body {
 button,
 input,
 textarea {
+  all: unset;
   font: 1.6rem "Roboto", sans-serif;
   color: var(--neutral-700);
 }

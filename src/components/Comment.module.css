@@ -8,12 +8,12 @@
 }
 
 .content {
-  background-color: var(--neutral-200);
-  border-radius: 8px;
-  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  background-color: var(--neutral-200);
+  border-radius: 8px;
+  padding: 1.6rem;
 }
 
 .author {
@@ -42,8 +42,6 @@
 }
 
 .contentHeader button {
-  background-color: transparent;
-  border: none;
   color: var(--neutral-500);
   font-size: 1.4rem;
   cursor: pointer;
@@ -63,8 +61,6 @@
 }
 
 .commentActions button {
-  background-color: transparent;
-  border: none;
   color: var(--neutral-500);
   font-size: 1.4rem;
   cursor: pointer;
