@@ -25,8 +25,19 @@ export function Post({ author, content, publishedAt }) {
   }
 
   function handleCommentChange(event) {
+    event.target.setCustomValidity("");
     setNewComment(event.target.value);
   }
+
+  function handleInvalidComment(event) {
+    event.target.setCustomValidity("O comentário é obrigatório!");
+  }
+
+  function deleteComment(content) {
+    setComments(comments.filter((comment) => comment !== content));
+  }
+
+  const isNewCommentInvalid = newComment.length === 0;
 
   return (
     <div className={styles.wrapper}>
@@ -64,14 +75,22 @@ export function Post({ author, content, publishedAt }) {
           placeholder="Escreva um comentário..."
           value={newComment}
           onChange={handleCommentChange}
+          onInvalid={handleInvalidComment}
+          required
         />
         <footer>
-          <button type="submit">Publicar</button>
+          <button type="submit" disabled={isNewCommentInvalid}>
+            Publicar
+          </button>
         </footer>
       </form>
 
       {comments.map((comment) => (
-        <Comment key={comment} content={comment} />
+        <Comment
+          key={comment}
+          content={comment}
+          onCommentDelete={deleteComment}
+        />
       ))}
     </div>
   );
