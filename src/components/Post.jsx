@@ -17,7 +17,7 @@ export function Post({ author, content, publishedAt }) {
     addSuffix: true,
   });
 
-  function handleCommentSubmit(event) {
+  function handleCreateNewComment(event) {
     event.preventDefault();
     setComments([...comments, comments.length + 1]);
   }
@@ -52,7 +52,7 @@ export function Post({ author, content, publishedAt }) {
         })}
       </div>
 
-      <form onSubmit={handleCommentSubmit} className={styles.commentForm}>
+      <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
         <textarea placeholder="Escreva um comentário..." />
         <footer>
