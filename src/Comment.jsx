@@ -10,9 +10,7 @@ export function Comment() {
         <div className={styles.content}>
           <div className={styles.contentHeader}>
             <div className={styles.author}>
-              <strong>
-                Ruan Gustavo <span>(você)</span>
-              </strong>
+              <strong>Ruan Gustavo</strong>
               <time>Cerca de 2h</time>
             </div>
             <button>

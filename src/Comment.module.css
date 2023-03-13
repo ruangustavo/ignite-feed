@@ -24,16 +24,14 @@
 .author strong {
   color: var(--gray-7);
   font-size: 1.4rem;
-}
-
-.author strong > span {
-  color: var(--gray-5);
-  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .author time {
   font-size: 1.2rem;
+  line-height: 1.6;
 }
+
 .comment p {
   font-size: 1.4rem;
 }
