@@ -79,7 +79,7 @@
   transition: color 0.5s;
 }
 
-.totalOfLikes::before {
+.likeCount span::before {
   content: "\2022";
   margin-right: 0.8rem;
 }
