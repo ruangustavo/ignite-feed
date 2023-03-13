@@ -6,32 +6,28 @@
 
 :root {
   font-size: 62.5%; /* 1rem = 10px */
-
-  /* Colors */
   --white: #ffffff;
-  --green: #00875f;
-  --green-light: #00b37e;
   --red-danger: #f75a68;
-  --gray-1: #121214;
-  --gray-2: #202024;
-  --gray-3: #323238;
-  --gray-4: #7c7c8a;
-  --gray-5: #8d8d99;
-  --gray-6: #c4c4cc;
-  --gray-7: #e1e1e6;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --neutral-50: #fafafa;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-500: #737373;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font: 1.6rem "Roboto", sans-serif;
+  background-color: var(--neutral-200);
+  color: var(--neutral-700);
   -webkit-font-smoothing: antialiased;
-  background-color: var(--gray-1);
-  color: var(--gray-6);
 }
 
 button,
 input,
 textarea {
   font: 1.6rem "Roboto", sans-serif;
-  color: var(--gray-6);
+  color: var(--neutral-700);
 }

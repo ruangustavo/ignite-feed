@@ -8,8 +8,8 @@
 }
 
 .content {
-  background-color: var(--gray-3);
-  border-radius: 0.8rem;
+  background-color: var(--neutral-200);
+  border-radius: 8px;
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 .author strong {
-  color: var(--gray-7);
+  color: var(--neutral-800);
   font-size: 1.4rem;
   line-height: 1.6;
 }
@@ -44,7 +44,7 @@
 .contentHeader button {
   background-color: transparent;
   border: none;
-  color: var(--gray-5);
+  color: var(--neutral-500);
   font-size: 1.4rem;
   cursor: pointer;
   font-weight: bold;
@@ -65,7 +65,7 @@
 .commentActions button {
   background-color: transparent;
   border: none;
-  color: var(--gray-5);
+  color: var(--neutral-500);
   font-size: 1.4rem;
   cursor: pointer;
   font-weight: bold;
@@ -75,7 +75,7 @@
 }
 
 .commentActions button:hover {
-  color: var(--gray-7);
+  color: var(--blue-500);
   transition: color 0.5s;
 }
 

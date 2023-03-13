@@ -12,7 +12,10 @@ const posts = [
       role: "Full-stack developer",
     },
     content: [
-      { type: "paragraph", content: "Olá, isso é um post!" },
+      {
+        type: "paragraph",
+        content: "Olá, isso é um post de demonstração para o meu Linkedin!",
+      },
       { type: "link", content: "https://github.com" },
     ],
     publishedAt: new Date(),

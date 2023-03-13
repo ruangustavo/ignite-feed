@@ -1,6 +1,6 @@
 .wrapper {
-  background-color: var(--gray-2);
-  border-radius: 0.8rem;
+  background-color: var(--neutral-50);
+  border-radius: 8px;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 
 .wrapper time {
   font-size: 1.4rem;
-  color: var(--gray-5);
+  color: var(--neutral-500);
 }
 
 .wrapper p {
@@ -32,9 +32,9 @@
   height: 4.8rem;
   width: calc(4.8rem + 1.2rem);
   height: calc(4.8rem + 1.2rem);
-  border-radius: 0.8rem;
-  border: 0.4rem solid var(--gray-2);
-  outline: 0.2rem solid var(--green);
+  border-radius: 8px;
+  border: 0.4rem solid var(--neutral-50);
+  outline: 0.2rem solid var(--blue-500);
 }
 
 .user {
@@ -49,19 +49,19 @@
 }
 
 .info strong {
-  color: var(--gray-7);
+  color: var(--neutral-800);
   line-height: 1.6;
 }
 
 .info span {
-  color: var(--gray-5);
+  color: var(--neutral-500);
   line-height: 1.6;
   font-size: 1.4rem;
 }
 
 .content a {
   font-weight: bold;
-  color: var(--green);
+  color: var(--blue-500);
   text-decoration: none;
 }
 
@@ -70,39 +70,39 @@
   flex-direction: column;
   gap: 1.6rem;
   padding-top: 2.4rem;
-  border-top: 0.1rem solid var(--gray-3);
+  border-top: 0.1rem solid var(--neutral-300);
 }
 
 .commentForm strong {
-  color: var(--gray-7);
+  color: var(--neutral-800);
 }
 
 .commentForm textarea {
   resize: none;
   border: 0;
-  background-color: var(--gray-1);
+  background-color: var(--neutral-200);
   height: 9.6rem;
-  border-radius: 0.8rem;
+  border-radius: 8px;
   padding: 1.6rem;
 }
 
 .commentForm textarea:focus {
-  outline: solid 0.2rem var(--green);
+  outline: solid 0.2rem var(--blue-500);
 }
 
 .commentForm button {
   all: unset;
   width: fit-content;
   padding: 1.2rem 2.4rem;
-  border-radius: 0.8rem;
+  border-radius: 8px;
   color: var(--white);
-  background-color: var(--green);
+  background-color: var(--blue-500);
   font-weight: 700;
   cursor: pointer;
 }
 
 .commentForm button:not(:disabled):hover {
-  background-color: var(--green-light);
+  background-color: var(--blue-400);
   transition: background-color 0.2s;
 }
 

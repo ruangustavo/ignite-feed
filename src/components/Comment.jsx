@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export function Comment({ content, onCommentDelete }) {
   const [likeCount, setLikeCount] = useState(0);
-  // const isCommentLiked = likeCount > 0;
 
   function handleDeleteComment() {
     onCommentDelete(content);
