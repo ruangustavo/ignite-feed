@@ -86,6 +86,10 @@
   padding: 1.6rem;
 }
 
+.commentForm textarea:focus {
+  outline: solid 0.2rem var(--green);
+}
+
 .commentForm button {
   all: unset;
   width: fit-content;
