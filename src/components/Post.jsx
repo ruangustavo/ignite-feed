@@ -60,11 +60,9 @@ export function Post({ author, content, publishedAt }) {
         </footer>
       </form>
 
-      {/* <div className={styles.comments}> */}
       {comments.map((ignoredComment) => (
         <Comment />
       ))}
-      {/* </div> */}
     </div>
   );
 }
